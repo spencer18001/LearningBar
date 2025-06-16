@@ -6,7 +6,7 @@
       "version": "20"
     }
   },
-  "postCreateCommand": "if [ ! -d front ]; then npm create vite@latest front -- --template react-ts && cd front && npm install; fi",
+  "postCreateCommand": "if [ ! -d front ]; then echo y | npm create vite@latest front -- --template react-ts && cd front && npm install; fi",
   "customizations": {
     "vscode": {
       "extensions": [
